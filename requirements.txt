@@ -1,8 +1,8 @@
 pandas==1.5.2
-numpy==1.23.5
+numpy==1.21.6
 gspread==5.7.2
 jupyter==1.0.0
 gensim~=4.3.0
-spacy>=3.0.0,<4.0.0
+spacy==3.4.4
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.0/en_core_web_sm-3.4.0-py3-none-any.whl
-nltk~=3.7
+nltk==3.7

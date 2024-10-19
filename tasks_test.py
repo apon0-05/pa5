@@ -9,6 +9,7 @@ from upload_reports import report_file
 
 def print_score(score: int, task: str):
     print(f'\nScore for {task}: {score} out of 100\n')
+    
 
 
 class TestTasks(unittest.TestCase):
