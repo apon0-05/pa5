@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Grading PA5",
+      "setup": "",
+      "run": "python -m unittest tasks_test.TestTasks.test_pa5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10
+    }
+  ]
+}

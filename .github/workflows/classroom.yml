@@ -1,0 +1,29 @@
+name: GitHub Classroom Workflow
+
+on: [push]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v3
+      - name: Set up Python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+          cache: 'pip'
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Testing
+        uses: education/autograding@v1
+      - name: Uploading reports
+        env:
+          OWNER: ${{ github.repository }}
+        run: python upload_reports.py
